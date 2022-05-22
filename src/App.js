@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import Guides from "./components/Guides";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
+
+  const guideList = [{
+    id:1,
+    title:'Bench Press',
+    muscleGroup: '',
+    exerciseImage:'',
+    exerciseVideo:'',
+    text:''
+  }]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/guides" element={<Guides guideList={guideList}/>}/>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,13 +1,459 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* Base Styles */
+
+* {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  /* background-color: rgb(23, 57, 45); */
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background: none;
+  color: white;
+  border: solid 1px white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+i {
+  font-family: "FontAwesome";
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky-left {
+  position: fixed;
+  left: 0;
+}
+
+nav.solid {
+  background-color: rgb(26, 26, 26) !important;
+}
+
+.container {
+  padding: 0 60px;
+  /* height: 100%; */
+}
+
+/* Navbar */
+
+nav {
+  background-color: rgba(26, 26, 26, 0.449);
+  padding: 10px 0;
+  z-index: 2;
+  transition: background-color 0.5s ease-out;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+#check-btn {
+  display: none;
+}
+
+.ham-btn {
+  display: none;
+  /* margin: auto 0; */
+  cursor: pointer;
+  float: right;
+  font-size: 25px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 auto 0;
+  font-size: 1.2rem;
+}
+
+.nav-list ul {
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a:hover {
+  color: rgb(191, 255, 235) !important;
+}
+
+/* Home */
+#home {
+  height: 100vh;
+  background: url(/public/img/dumbells.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  height: 100%;
+}
+
+header .container {
+  height: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.header-content p {
+  color: rgb(191, 255, 235);
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.header-content h1 {
+  line-height: 90px;
+}
+
+.header-content .btn {
+  font-size: 1rem;
+  background-color: rgba(101, 101, 101, 0.449);
+  border-color: rgb(191, 255, 235);
+  color: rgb(191, 255, 235);;
+  margin-top: 10px;
+}
+
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#about h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: rgb(191, 255, 235);
+}
+
+.about-content {
+  display: flex;
+  /* height: 100%; */
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* .home-left-content {
+  max-width: 300px;
+  position: relative;
+} */
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+}
+
+.img-div {
+  max-width: 300px;
+  height: auto;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.me-img {
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 400px;
+  margin-left: 20px;
+  align-self: center;
+  line-height: 200%;
+  font-size: 1.3rem;
+}
+
+.about-text span a {
+  font-size: 1rem;
+  color: rgb(191, 255, 235);
+  cursor: pointer;
+}
+
+
+/* Guides */
+.guides-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-right: 1px solid rgb(191, 255, 235) ;
+  padding: 0 20px;
+  margin: auto 0;
+}
+
+.sidebar a {
+  color: rgb(191, 255, 235);
+}
+
+.muscle-group-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.muscle-group-content .img-div {
+  width: 50%;
+  align-self: center;
+  margin: 30px 0 0 10px;
+}
+
+.muscle-group-content p {
+  text-align: center;
+}
+
+.muscle-group-content span {
+  font-weight: lighter;
+}
+
+.guide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  margin-left: 300px;
+}
+
+.guide-content-left {
+  margin-right: 100px;
+  max-width: 500px;
+}
+
+.guide-content-left p {
+  font-weight: lighter;
+}
+
+.vid-div {
+  padding-right: 30px;
+  width: 700px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Media querries */
+
+@media only screen and (max-width: 1500px) {
+  .vid-div {
+    width: 500px;
+
+  }
+  .guide-content-left {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .guide-content-left p {
+    font-size: 0.8rem;
+  }
+  .vid-div {
+    width:500px
+  }
+
+  .guide-content {
+    margin-left: 300px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .sidebar {
+    width: 30%;
+    text-align: center;
+  }
+
+  .guide-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .guide-content-left {
+    margin: 0 !important;
+  }
+  .vid-div {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .about-text {
+    line-height: normal;
+  }
+
+  .guides-section {
+    justify-content: flex-start;
+  }
+
+  .guides-section {
+    flex-direction: column;
+    padding-top: 96px;
+  }
+  .sidebar {
+    position: sticky;
+    top: 100px;
+    border-right: none;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .guide-content {
+    margin: 100px 0 0 0 ;
+    margin-left: 0 !important;
+  }
+  .muscle-group-content{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ham-btn {
+    display: block;
+    padding-right: 60px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav h1 {
+    font-size: 1.5rem;
+  }
+
+  .home, 
+  .guides {
+    font-size: 1rem;
+  }
+
+  header .container {
+    padding: 0 30px;
+  }
+
+  .img-div {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }  
+  
+  .about-text {
+    line-height: normal;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  nav.scrolled {
+    background-color: rgb(26, 26, 26) !important;
+  }
+
+} 
+@media only screen and (max-width:550px) {
+  .guide-content {
+    width: 80%;
+    margin-top: 100px;
+    padding-bottom: 40px;
+  }
+  .vid-div {
+    width: auto !important;
+    padding-right: 0 !important;
+  }
+} 
+
+@media only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    .guide-content {
+      margin-left: 250px;
+      position: relative;
+    }
+    .guide-content-left {
+      margin-left: 40px;
+      margin-right: 20px;
+    }
+    .vid-div {
+      padding-right: 30px;
+      width: 500px;
+    }
+  }
