@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-fitness-page/static/css/main.84d9a1a7.css",
+    "main.js": "/react-fitness-page/static/js/main.2b97431d.js",
+    "static/js/787.7600bb82.chunk.js": "/react-fitness-page/static/js/787.7600bb82.chunk.js",
+    "static/media/dumbells.jpeg": "/react-fitness-page/static/media/dumbells.4265dafd365fe4b8e2d8.jpeg",
+    "index.html": "/react-fitness-page/index.html",
+    "main.84d9a1a7.css.map": "/react-fitness-page/static/css/main.84d9a1a7.css.map",
+    "main.2b97431d.js.map": "/react-fitness-page/static/js/main.2b97431d.js.map",
+    "787.7600bb82.chunk.js.map": "/react-fitness-page/static/js/787.7600bb82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d9a1a7.css",
+    "static/js/main.2b97431d.js"
+  ]
+}
