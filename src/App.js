@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import { Route, HashRouter as Router, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Guides from "./components/Guides";
 import Home from "./components/Home";
