@@ -17,7 +17,7 @@ const Guide = ({guideList}) => {
         </div>
         <div className="guide-content-right">
         <div className="vid-div">
-            <video src="/vid/BenchPress.mp4" autoPlay loop muted></video>
+            <video src="https://github.com/RemWinter/react-fitness-page/raw/main/public/vid/BenchPress.mp4" autoPlay loop muted></video>
           </div>
         </div>
       </div>
