@@ -18,7 +18,7 @@ const Guides = ({guideList}) => {
           <p>Primary muscle group(s):</p>
           <p><span>Pectorials</span></p>
           <p>Secondard muscle group(s): </p>
-          <p><span>Triceps % Deltoids</span></p>
+          <p><span>Triceps & Deltoids</span></p>
         </div>
       </div>
       <Guide guideList={guideList}/>
