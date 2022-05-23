@@ -20,8 +20,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="https://remwinter.github.io/react-fitness-page/home" element={<Home/>}/>
-        <Route path="https://remwinter.github.io/react-fitness-page/guides" element={<Guides guideList={guideList}/>}/>
+        <Route exact path="/home/" element={<Home/>}/>
+        <Route exact path="/guides/" element={<Guides guideList={guideList}/>}/>
       </Routes>
     </Router>
   );
