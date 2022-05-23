@@ -24,7 +24,7 @@ const NavItems = ({navList, title}) => {
           <div className="nav-list">
           {navList.map((navItem) => (
               <li className={navItem.toLowerCase()}>
-                <a className={`${navItem.toLowerCase()}-link`} href={`${navItem.toLowerCase()}`}>{navItem}</a>
+                <a className={`${navItem.toLowerCase()}-link`} href={`#/${navItem.toLowerCase()}`}>{navItem}</a>
               </li>
             ))}
           </div>

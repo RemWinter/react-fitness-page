@@ -20,7 +20,7 @@ const Home = () => {
           <div className="header-content">
             <p>Unlock your best version</p>
             <h1>Workout With<br/>Confidence</h1>
-            <button className="btn"><a href="#about">Learn more</a></button>
+            <button className="btn" onClick={() => window.scrollTo(0, document.body.scrollHeight)}>Learn More</button>
           </div>
         </div>
       </header>
@@ -30,7 +30,7 @@ const Home = () => {
           <div className="about-content">
             <div className="img-div" onClick={() => {console.log(window.scrollY)}}>
                 <div className="overlay"></div>
-                <img className="me-img" src="/img/picture1.JPG" alt="" />
+                <img className="me-img" src="https://raw.githubusercontent.com/RemWinter/react-fitness-page/main/public/img/picture1.JPG" alt="" />
               </div>
             <p className="about-text">Hey there! Welcome to my fitness page.<br/><br/> My name's Remi. I'm a full time personal trainer with the mission of helping as many people achieve their fitness goals as possible.<br/><br/> I have been training for 5+ years, so you can assure you're in safe hands.<br/><br/> <span><a href="/guides">-Explore workout guides</a></span></p>
             </div>

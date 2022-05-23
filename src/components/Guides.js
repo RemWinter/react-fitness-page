@@ -13,7 +13,7 @@ const Guides = ({guideList}) => {
         </ul>
         <div className="muscle-group-content">
           <div className="img-div">
-            <img className="chest-group" src="/img/chestmusclegroup.png" alt="" />
+            <img className="chest-group" src="https://raw.githubusercontent.com/RemWinter/react-fitness-page/main/public/img/chestmusclegroup.png" alt="" />
           </div>
           <p>Primary muscle group(s):</p>
           <p><span>Pectorials</span></p>
