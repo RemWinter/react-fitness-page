@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="overlay"></div>
                 <img className="me-img" src="https://raw.githubusercontent.com/RemWinter/react-fitness-page/main/public/img/picture1.JPG" alt="" />
               </div>
-            <p className="about-text">Hey there! Welcome to my fitness page.<br/><br/> My name's Remi. I'm a full time personal trainer with the mission of helping as many people achieve their fitness goals as possible.<br/><br/> I have been training for 5+ years, so you can assure you're in safe hands.<br/><br/> <span><a href="/guides">-Explore workout guides</a></span></p>
+            <p className="about-text">Hey there! Welcome to my fitness page.<br/><br/> My name's Remi. I'm a full time personal trainer with the mission of helping as many people achieve their fitness goals as possible.<br/><br/> I have been training for 5+ years, so you can assure you're in safe hands.<br/><br/> <span><a href="#/guides">-Explore workout guides</a></span></p>
             </div>
           </div>
       </div>
